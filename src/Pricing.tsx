@@ -2,7 +2,7 @@ import './Pricing.css'
 import './SectionDivider.css'
 import './Lines.css'
 
-import { GetScreenWidth, SectionDivider, NewSectionDivider } from './Helpers.tsx'
+import { GetScreenWidth, NewSectionDivider } from './Helpers.tsx'
 
 function Service(service: string, price: number) {
     return (
@@ -23,8 +23,6 @@ function Service(service: string, price: number) {
 }
 
 function Pricing() {
-
-  const width = GetScreenWidth()
   
   return (
     <>
