@@ -2,7 +2,7 @@ import './Pricing.css'
 import './SectionDivider.css'
 import './Lines.css'
 
-import { GetScreenWidth, NewSectionDivider } from './Helpers.tsx'
+import { NewSectionDivider } from './Helpers.tsx'
 
 function Service(service: string, price: number) {
     return (
