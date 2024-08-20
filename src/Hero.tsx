@@ -1,7 +1,7 @@
 import './Hero.css'
 import './Lines.css'
 
-import { GetScreenWidth, Line } from './Helpers.tsx'
+import { GetScreenWidth } from './Helpers.tsx'
 
 function HeroSubtext(width : number) {
     if (width >= 768) {
