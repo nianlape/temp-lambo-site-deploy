@@ -1,0 +1,105 @@
+.pricing-container {
+    width: calc(80% + 7svw);
+    max-width: calc(1280px + 7svw);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+}
+
+.pricing-container > :nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #CE4100;
+    filter: blur(12rem);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    align-self: center;
+}
+
+.pricing-bento {
+    background: linear-gradient(to right, #121212, #303030);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 1rem 0;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+    font-size: var(--fs-xs);
+    margin: 0 0.7em;
+    gap: 20px;
+    align-items: center;
+}
+
+.service-container > :first-child {
+    text-align: left;
+}
+
+.service-container > :nth-child(2) {
+    text-align: right;
+}
+
+.service-category-text {
+    font-weight: 800;
+    font-size: var(--fs-s);
+    background: #CE4100;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.service-category-text.top {
+    background: linear-gradient(to bottom, #F4BB62, #CE4100);
+    background-clip: text;
+    color: transparent;
+}
+
+.service-category-text.bottom {
+    background: linear-gradient(to top, #F4BB62, #CE4100);
+    background-clip: text;
+    color: transparent;
+}
+
+@media (min-width: 768px) {
+    .pricing-container {
+        flex-direction: row;
+    }
+
+    .pricing-bento {
+        width: 33%;
+        max-width: none;
+        font-size: var(--fs-s);
+    }
+
+    .service-category-text {
+        font-size: var(--fs-m);
+    }
+
+    .service-category-text.top {
+    background: linear-gradient(to right, #F4BB62, #CE4100);
+    background-clip: text;
+    color: transparent;
+    }
+
+    .service-category-text.bottom {
+        background: linear-gradient(to left, #F4BB62, #CE4100);
+        background-clip: text;
+        color: transparent;
+    }
+
+}

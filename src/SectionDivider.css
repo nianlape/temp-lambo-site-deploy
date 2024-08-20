@@ -1,0 +1,41 @@
+.section-divider-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    width: calc(80% + 7svw);
+    max-width: 300px;
+    align-items: center;
+    gap: 4px;
+    margin-top: 4rem;
+}
+
+.section-title-box {
+    font-family: Outfit;
+    font-weight: 800;
+    font-size: var(--fs-s);
+    color: white;
+    width: fit-content;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.5ch;
+}
+
+.section-divider-line {
+    height: 1px;
+    background-color: white;
+    opacity: 30%;
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+
+    .section-divider-container {
+        flex-direction: row;
+        max-width: calc(1280px + 7svw);
+    }
+
+    .section-title-box {
+        font-size: var(--fs-m);
+    }
+
+}

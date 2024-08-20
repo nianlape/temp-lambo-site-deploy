@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Outfit;
+    src: url(./assets/fonts/Outfit-VariableFont_wght.ttf);
+}
+
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotation {
+    0%   { --gradient-angle: 0deg; }
+    100% { --gradient-angle: 360deg; }
+}
+
+
+:root {
+
+    --fs-xl: clamp(2.25rem, 2svw + 1rem, 4rem);
+    --fs-m: clamp(1.75rem, 1svw + 1rem, 2.25rem);
+    --fs-s: 1.5rem;
+    --fs-xs: 1.25rem;
+
+    font-family: Outfit;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: white;
+    background-color: #0e0f11;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

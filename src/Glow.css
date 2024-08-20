@@ -1,0 +1,10 @@
+.glow {
+    position: relative;
+    top: -150px;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    background-color: #CE4100;
+    filter: blur(0px)
+    z-index: -1;
+}

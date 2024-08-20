@@ -1,0 +1,150 @@
+img {
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    width: clamp(220px, 40svw, 800px);
+    margin: 0 auto;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: gray;
+    border-radius: 50%;
+    filter: blur(7rem);
+    opacity: 50%;
+    height: 80%;
+    width: 80%;
+    z-index: -1;
+}
+
+main {
+    position: relative;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(white 0.09svw, transparent 0.09svw);
+    background-size: 2.3svw 2.3svw;
+    opacity:0%;
+    z-index: -1;
+}
+
+.hero-container {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 640px;
+    margin: 0 auto;
+    
+}
+
+.hero-text,
+.button-text {
+    font-family: Outfit;
+    font-weight: 800;
+    font-size: 2rem;
+    background: linear-gradient(
+        var(--gradient-angle), 
+        #F4BB62, 
+        #CE4100);
+    animation: rotation 7s linear infinite;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.hero-text::first-line {
+    color: white;
+}
+
+.hero-subtext {
+    font-size: 0.6em;
+    font-weight: 200;
+    text-align: center;
+}
+
+button {
+    border: none;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(to bottom, #0C0C0C, #292929);
+    border-radius: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+button::before,
+button::after {
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: inherit;
+    background: linear-gradient(
+        var(--gradient-angle), 
+        #F4BB62, 
+        #CE4100);
+    animation: rotation 7s linear infinite;
+}
+
+button::before {
+    z-index: -1;
+}
+
+button::after {
+    z-index: -2;
+    filter: blur(0.5cm);
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 7svw;
+    }
+
+    .hero-container {
+        width: 40%;
+        margin: 0;
+        margin-left: auto;
+    }
+
+    .hero-text,
+    .button-text {
+        font-size: var(--fs-xl);
+        text-align: left;
+    }
+
+    .hero-subtext {
+        font-size: var(--fs-xs);
+        opacity: 80%;
+    }
+
+    button {
+        font-size: var(--fs-xl);
+    }
+
+    .image-container {
+        margin: 0;
+        width: 40%;
+        max-width: 640px;
+        margin-right: auto;
+    }
+}
+

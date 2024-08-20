@@ -1,0 +1,23 @@
+.line {
+    height: 1px;
+    width: calc(80% + 7svw);
+    max-width: calc(1280px + 7svw);
+    background-color: white;
+    opacity:30%;
+    margin: 1em auto;
+}
+
+.service-line {
+    height: 1px;
+    width: 93%;
+    background-color: white;
+    opacity: 30%;
+    margin: 0 auto;
+}
+
+.section-divider-line {
+    height: 1px;
+    background-color: white;
+    opacity: 30%;
+    flex: 1;
+}

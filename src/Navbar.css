@@ -1,0 +1,30 @@
+.navbar-flexbox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: var(--fs-xs);
+    width: calc(80% + 7svw);
+    max-width: calc(1280px + 7svw);
+    margin: 0 auto;
+}
+
+.navbar-options {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 200;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    
+    .navbar-flexbox {
+        font-size: var(--fs-s);
+    }
+}
