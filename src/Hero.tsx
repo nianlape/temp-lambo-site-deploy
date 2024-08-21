@@ -20,7 +20,7 @@ function Hero() {
     <>
         <main>
                 <div className="image-container">
-                <img src="./src/assets/images/sam_hero_image.png" alt="decorative" />
+                <img src="https://i.ibb.co/XFmv3ZJ/sam-hero-image.png" alt="decorative" />
             </div>
             <div className="hero-container">
                 <span className="hero-text">
